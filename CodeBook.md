@@ -33,7 +33,7 @@ The following files are available for the train and test data. Their description
 
 
 ###Reading the data
-Following the instructions of the PA Project, we must create a new data set which should contains the observed data for both, the train and test set.
+Following the instructions of the PA Project, we must create a new data set which should contains the observed data for both, the train and test set. All the files are formatted as plain text (TXT), suitable for loading as table.
 
 Based on the files, we see that the requested data are stored on different files. There are two files that contains the labels and the descriptive activity for the observed data: *features.txt* and *activity_labels.txt*, respectively.
 
@@ -43,6 +43,16 @@ The observed data are stored on three of different files for both data sets, tra
 * *y_train.txt*, which describes the activity that was perfomed during the experiment.
 
 
+###Preparing the data
+With all the files loaded in **R**, we can merge the three data set for each train and test data, and create a new data set with this two sets of observations. Finally we assign the names of the features to the names of the newly created data set, and export it to a *TXT* file.
+
+At this point, the data set contains 10299 observations and 563 variables.
+
+The following step implies to extract from this data set the columns referring to the mean and standard deviation observed values.
+
+For this task, we simply use a pattern based on the names of the columns, and using grep, extract all the columns that matched the pattern. Resulting in 66 selected columns
+
+Then we create a new data set with the ID of the subject, the activity (at this step is still an ID), and the 66 columns for mean and standard deviation values.
 
 
 
