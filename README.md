@@ -3,6 +3,8 @@ Getting and Cleaning Data Course
 
 Code examples and PA of the Johns Hopkins Coursera Course "Getting and Cleaning Data"
 
+
+###run_analysis.R
 The script *run_analysis.R* contains the reproducible code in R for the Peer Assessment **Getting and Cleaning Data Project**.
 
 You must download the Data set to your working directory in order to reproduce the code. Please download from:
