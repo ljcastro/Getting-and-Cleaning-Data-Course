@@ -12,7 +12,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 Once downloaded, unzip the file, and you must see a new directory called **UCI HAR Dataset**.
 
-This directory contains all the files needed to run the code.
+This directory contains all the data files needed to run the code.
 
 In order to obtain the results, you must run the code in the order established in the script.
 
