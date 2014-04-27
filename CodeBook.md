@@ -50,9 +50,18 @@ At this point, the data set contains 10299 observations and 563 variables.
 
 The following step implies to extract from this data set the columns referring to the mean and standard deviation observed values.
 
-For this task, we simply use a pattern based on the names of the columns, and using grep, extract all the columns that matched the pattern. Resulting in 66 selected columns
+For this task, we simply use a pattern based on the names of the columns, and using *grepl* function, extract all the columns that matched the pattern. Resulting in 66 selected columns
 
 Then we create a new data set with the ID of the subject, the activity (at this step is still an ID), and the 66 columns for mean and standard deviation values.
 
+Finally, we convert the activity ID to a factor column, using the names of the activity as labels.
+
+
+###Final Result
+The last task is to perform a grouping calculation with this new data set. We use the *plyr* package for this task, and use the *ddply* function to perform the mean for all the numeric columns grouping by *activity* and *subjectID*. We saved the resulting calculation in a new data set.
+
+This final set contains 180 observations, having 6 total observations per activity and subjectID, and 68 variables containing the resulting average of the different experiments per activity and subject.
+
+Finally, we export this data set to a new *TXT* file.
 
 
