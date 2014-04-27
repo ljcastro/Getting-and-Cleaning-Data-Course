@@ -37,5 +37,12 @@ Following the instructions of the PA Project, we must create a new data set whic
 
 Based on the files, we see that the requested data are stored on different files. There are two files that contains the labels and the descriptive activity for the observed data: *features.txt* and *activity_labels.txt*, respectively.
 
+The observed data are stored on three of different files for both data sets, train and test:
+* *subject_train.txt*, which contains the ID of the person who performed the activity.
+* *X_train.txt*, which contains 561 values for each row of observed ID performing an activity.
+* *y_train.txt*, which describes the activity that was perfomed during the experiment.
+
+
+
 
 
